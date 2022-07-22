@@ -1,4 +1,6 @@
+package br.com.bytebank.banco.test;
 
+import br.com.bytebank.banco.modelo.*;
 public class TesteSaca {
 
 	public static void main(String[] args) {
