@@ -1,34 +1,26 @@
 package br.com.bytebank.banco.test;
 
-import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.ContaPoupanca;
-
 public class Teste {
 
 	public static void main(String[] args) {
+		
+		int [] idades = new int[5];
+		idades[0] = 29;
+		idades[1] = 39;
+		idades[2] = 49;
+		idades[3] = 59;
+		idades[4] = 69;
+		
+		int idade1 = idades[0];
+		
+		for(int i = 0; i < idades.length; i++) {
+			idades[i] = i * i; 
+		}
+		
+		for(int i = 0; i < idades.length; i++) {
+			System.out.println(idades[i]);
+		}
 
-		System.out.println("x");
-		System.out.println(3);
-		System.out.println(false);
-		
-		ContaCorrente cc = new ContaCorrente(22, 33);
-		ContaPoupanca cp = new ContaPoupanca(44, 55);
-		
-		System.out.println(cc.toString());
-		System.out.println(cp);
-		
-		println();
 	}
-	
-	static void println() {
-		
-	}
-	
-	static void println(int a) {
-		
-	}
-	
-	static void println(boolean valor) {
-		
-	}
+
 }
