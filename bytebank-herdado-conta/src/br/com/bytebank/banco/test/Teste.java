@@ -1,26 +1,26 @@
 package br.com.bytebank.banco.test;
 
+import br.com.bytebank.banco.modelo.Conta;
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.GuardadorDeContas;
+
 public class Teste {
 
 	public static void main(String[] args) {
 		
-		int [] idades = new int[5];
-		idades[0] = 29;
-		idades[1] = 39;
-		idades[2] = 49;
-		idades[3] = 59;
-		idades[4] = 69;
+		GuardadorDeContas guardador = new GuardadorDeContas();
 		
-		int idade1 = idades[0];
-		
-		for(int i = 0; i < idades.length; i++) {
-			idades[i] = i * i; 
-		}
-		
-		for(int i = 0; i < idades.length; i++) {
-			System.out.println(idades[i]);
-		}
+		Conta cc = new ContaCorrente(22, 11);		
+		guardador.adiciona(cc);
 
+		Conta cc2 = new ContaCorrente(22, 66);		
+		guardador.adiciona(cc2);
+		
+		int tamanho = guardador.getQuantidadeDeElementos();
+		System.out.println(tamanho);
+		
+		Conta ref = (Conta) guardador.getReferencia(1);
+		System.out.println(ref.getNumero());
 	}
 
 }
