@@ -2,6 +2,7 @@ package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
@@ -17,7 +18,7 @@ public class TesteArrayListEquals {
 //		System.out.println(igual);
 		
 		// Generics
-		ArrayList<Conta> lista = new ArrayList<Conta>();
+		LinkedList<Conta> lista = new LinkedList<Conta>();
 		
 		Conta cc = new ContaCorrente(22, 11);		
 		lista.add(cc);

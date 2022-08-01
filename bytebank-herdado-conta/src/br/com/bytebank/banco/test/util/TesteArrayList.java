@@ -2,6 +2,8 @@ package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
@@ -10,9 +12,7 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 
-		ArrayList<Conta> lista = new ArrayList<Conta>();
-		
-		ArrayList<String> nomes = new ArrayList<String>();
+		List<Conta> lista = new LinkedList<Conta>();
 		
 		Conta cc = new ContaCorrente(22, 11);		
 		lista.add(cc);
@@ -20,7 +20,7 @@ public class TesteArrayList {
 		Conta cc2 = new ContaCorrente(22, 66);		
 		lista.add(cc2);
 		
-		System.out.println(lista.size());
+		System.out.println("Tamanho: " + lista.size());
 		
 		Conta ref = (Conta) lista.get(0);
 		
