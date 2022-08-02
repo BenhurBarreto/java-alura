@@ -12,7 +12,7 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 
-		List<Conta> lista = new LinkedList<Conta>();
+		List<Conta> lista = new ArrayList<Conta>();
 		
 		Conta cc = new ContaCorrente(22, 11);		
 		lista.add(cc);
