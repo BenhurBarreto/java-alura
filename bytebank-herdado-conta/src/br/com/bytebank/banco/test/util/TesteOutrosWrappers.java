@@ -1,5 +1,6 @@
 package br.com.bytebank.banco.test.util;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TesteOutrosWrappers {
