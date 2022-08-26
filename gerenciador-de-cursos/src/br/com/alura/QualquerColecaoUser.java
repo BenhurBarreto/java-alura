@@ -9,7 +9,7 @@ public class QualquerColecaoUser {
 		
 		Collection<Aluno> alunos = new HashSet<>();
 		alunos.size();
-		alunos.get(56);
+//		alunos.get(56);
 
 	}
 
