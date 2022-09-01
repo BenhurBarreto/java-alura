@@ -20,6 +20,12 @@ public class ImdbApiConection {
 		
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 		System.out.println(response.body());
+		
+		String json = response.body();
+		String extractedJson = json.substring(json.lastIndexOf("[") + 1, json.indexOf("]"));
+		System.out.println(extractedJson);
+		
+//		Pattern pattern = Pattern.compile("[", "]");
 	}
 
 }
